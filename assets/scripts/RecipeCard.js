@@ -10,9 +10,9 @@ class RecipeCard extends HTMLElement {
     // A1. TODO - Attach the shadow DOM to this Web Component (leave the mode open)
     this.attachShadow({ mode: "open" });
     // A2. TODO - Create an <article> element - This will hold our markup once our data is set
-    const article = document.createElement("article");
+    let article = document.createElement("article");
     // A3. TODO - Create a style element - This will hold all of the styles for the Web Component
-    const style = document.createElement("style");
+    let style = document.createElement("style");
     // A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made
     style.textContent = `* {
       font-family: sans-serif;
